@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.matsim</groupId>
+    <artifactId>matsim-simple-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <repositories>
+       <repository>
+           <id>org.matsim</id>
+           <url>https://repo.matsim.org/repository/matsim</url>
+       </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- MATSim Core Dependency -->
+        <dependency>
+            <groupId>org.matsim</groupId>
+            <artifactId>matsim</artifactId>
+            <version>2024.0</version>  <!-- Use the latest version -->
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>emissions</artifactId>
+            <version>2024.0</version>
+        </dependency>
+
+        <!-- Optionally include other MATSim modules if needed -->
+        <!-- Example: Add more modules here as needed, like contrib or extensions -->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
