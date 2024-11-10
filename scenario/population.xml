@@ -1,21 +1,42 @@
 <?xml version="1.0" ?>
 <!DOCTYPE plans SYSTEM "http://www.matsim.org/files/dtd/plans_v4.dtd">
 <plans>
+    <!-- Early morning worker -->
     <person id="1">
         <plan>
-            <act type="home" x="-25000" y="0" link="1" end_time="06:00" />
+            <act type="home" x="-25000" y="1000" link="1" end_time="06:00" />
             <leg mode="car">
-
             </leg>
-            <act type="work" x="10000" y="0" link="20" dur="00:10" />
+            <act type="work" x="5000" y="1000" link="3" dur="08:00" />
             <leg mode="car">
-
             </leg>
-            <act type="work" x="10000" y="0" link="20" dur="03:30" />
+            <act type="home" x="-25000" y="1000" link="1" />
+        </plan>
+    </person>
+
+    <!-- Regular schedule worker -->
+    <person id="2">
+        <plan>
+            <act type="home" x="-25000" y="-1000" link="4" end_time="07:30" />
             <leg mode="car">
-
             </leg>
-            <act type="home" x="-25000" y="0" link="1" />
+            <act type="work" x="5000" y="-1000" link="6" dur="08:30" />
+            <leg mode="car">
+            </leg>
+            <act type="home" x="-25000" y="-1000" link="4" />
+        </plan>
+    </person>
+
+    <!-- Late morning worker -->
+    <person id="3">
+        <plan>
+            <act type="home" x="-25000" y="1000" link="1" end_time="08:45" />
+            <leg mode="car">
+            </leg>
+            <act type="work" x="-5000" y="-1000" link="5" dur="08:00" />
+            <leg mode="car">
+            </leg>
+            <act type="home" x="-25000" y="1000" link="1" />
         </plan>
     </person>
 </plans>
